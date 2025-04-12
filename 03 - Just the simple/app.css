@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Avenir', sans-serif;
+    padding: 64px;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #252525;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+}
+
+/* Text Content */
+.text-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.left-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.right-column {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #252525;
+    font-size: 68px;
+    line-height: 80px;
+    font-weight: 800;
+    margin: 0;
+}
+
+p {
+    font-size: 26px;
+    font-weight: normal;
+    color: #252525;
+    opacity: 0.8;
+    margin: 0 0 24px 0;
+    line-height: 1.4; /* Reduced line height */
+}
+
+/* Button Styles */
+.cta-button {
+    display: inline-block;
+    background-color: #252525;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 10px;
+    padding: 16px 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    min-width: 120px;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Image Section */
+.image-section {
+    width: 100%;
+    margin-top: auto;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 72px;
+        line-height: 68px;
+    }
+    
+    p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 48px;
+    }
+    
+    h1 {
+        font-size: 56px;
+        line-height: 52px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    .cta-button {
+        padding: 14px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 32px 24px;
+    }
+    
+    .hero {
+        gap: 16px;
+    }
+    
+    h1 {
+        font-size: 42px;
+        line-height: 40px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    .cta-button {
+        width: 100%;
+        padding: 12px 6px;
+        font-size: 12px;
+    }
+}
